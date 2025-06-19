@@ -5,33 +5,34 @@ import { ExternalLink, Github, Cpu, Globe, Smartphone } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: 'AI-Powered Chat Application',
-      description: 'A real-time chat application with AI assistant integration, built with React and Firebase. Features include message encryption and smart reply suggestions.',
-      technologies: ['React', 'Firebase', 'Python', 'OpenAI API'],
+      title: 'Goat It',
+      description: 'A todo list app made using React, Firebase, Vite',
+      technologies: ['React', 'Firebase'],
       icon: Cpu,
       gradient: 'from-purple-500 to-pink-500'
     },
-    {
-      title: 'Personal Portfolio Website',
-      description: 'A responsive portfolio website showcasing modern web development practices with smooth animations and optimized performance.',
-      technologies: ['Next.js', 'React', 'Tailwind CSS', 'TypeScript'],
-      icon: Globe,
-      gradient: 'from-blue-500 to-cyan-500'
-    },
-    {
-      title: 'Task Management Dashboard',
-      description: 'A comprehensive task management system with real-time updates, drag-and-drop functionality, and collaborative features.',
-      technologies: ['React', 'Firebase', 'JavaScript', 'CSS'],
-      icon: Smartphone,
-      gradient: 'from-green-500 to-emerald-500'
-    },
-    {
-      title: 'Machine Learning Model Trainer',
-      description: 'A Python-based tool for training and evaluating machine learning models with a user-friendly interface for data preprocessing.',
-      technologies: ['Python', 'Scikit-learn', 'Pandas', 'NumPy'],
-      icon: Cpu,
-      gradient: 'from-orange-500 to-red-500'
-    }
+
+    // {
+    //   title: 'Personal Portfolio Website',
+    //   description: 'A responsive portfolio website showcasing modern web development practices with smooth animations and optimized performance.',
+    //   technologies: ['Next.js', 'React', 'Tailwind CSS', 'TypeScript'],
+    //   icon: Globe,
+    //   gradient: 'from-blue-500 to-cyan-500'
+    // },
+    // {
+    //   title: 'Task Management Dashboard',
+    //   description: 'A comprehensive task management system with real-time updates, drag-and-drop functionality, and collaborative features.',
+    //   technologies: ['React', 'Firebase', 'JavaScript', 'CSS'],
+    //   icon: Smartphone,
+    //   gradient: 'from-green-500 to-emerald-500'
+    // },
+    // {
+    //   title: 'Machine Learning Model Trainer',
+    //   description: 'A Python-based tool for training and evaluating machine learning models with a user-friendly interface for data preprocessing.',
+    //   technologies: ['Python', 'Scikit-learn', 'Pandas', 'NumPy'],
+    //   icon: Cpu,
+    //   gradient: 'from-orange-500 to-red-500'
+    // }
   ];
 
   return (
@@ -83,7 +84,7 @@ const Projects = () => {
                   </button>
                   <button className="flex items-center space-x-2 text-gray-600 hover:text-gray-900 transition-colors duration-200">
                     <ExternalLink className="w-4 h-4" />
-                    <span className="text-sm font-medium">Live Demo</span>
+                    <span className="text-sm font-medium"><a href="https://react-todo-list-qviw.vercel.app/" target='_blank'>Live Demo</a></span>
                   </button>
                 </div>
               </div>

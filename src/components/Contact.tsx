@@ -31,7 +31,7 @@ const Contact = () => {
               
               <div className="space-y-4">
                 <a 
-                  href="mailto:your.email@example.com"
+                  href="mailto:rsivasaiprakash121@gmail.com"
                   className="flex items-center space-x-4 p-4 rounded-lg border border-gray-200 hover:border-gray-300 hover:shadow-md transition-all duration-200 group"
                 >
                   <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
@@ -39,12 +39,12 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium text-gray-900">Email</p>
-                    <p className="text-gray-600 text-sm">your.email@example.com</p>
+                    <p className="text-gray-600 text-sm">rsivasaiprakash121@gmail.com</p>
                   </div>
                 </a>
                 
                 <a 
-                  href="https://linkedin.com/in/yourprofile"
+                  href="https://www.linkedin.com/in/rayudu-siva-sai-prakash/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-4 p-4 rounded-lg border border-gray-200 hover:border-gray-300 hover:shadow-md transition-all duration-200 group"
