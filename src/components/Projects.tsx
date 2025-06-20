@@ -5,6 +5,7 @@ import { ExternalLink, Github, Cpu, Globe, Smartphone } from 'lucide-react';
 // Image Imports
 import goatIt from '../images/goat_it.png';
 import doomEternal from '../images/doom_eternal.png';
+import portfolio from '../images/portfolio.png';
 
 const Projects = () => {
   const projects = [
@@ -24,6 +25,15 @@ const Projects = () => {
       githubLink: 'https://github.com/prakash2077/Doom-Eternal-Fun',
       projectLink : 'https://siva-doometernal.netlify.app/',
     },
+    {
+      title: 'My Portfolio',
+      description: 'A polished and professional portfolio website showcasing my skills, projects, and achievements as a developer. This site features a modern design with seamless navigation, highlighting my expertise in creating visually appealing and functional web experiences.',
+      imageAddr: portfolio,
+      technologies: ['React', 'Vite', 'JavaScript'],
+      githubLink: 'https://github.com/prakash2077/Portfolio',
+      projectLink : 'https://siva-sai-prakash-portfolio.vercel.app/',
+    },
+
   ];
 
   return (
