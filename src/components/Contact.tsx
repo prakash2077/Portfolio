@@ -69,6 +69,7 @@ const Contact = () => {
                   <div>
                     <p className="font-medium text-gray-900">GitHub</p>
                     {/* <p className="text-gray-600 text-sm">Check out my code</p> */}
+                    {/* Test some comment */}
                   </div>
                 </a>
               </div>
