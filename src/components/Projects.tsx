@@ -2,37 +2,28 @@
 import React from 'react';
 import { ExternalLink, Github, Cpu, Globe, Smartphone } from 'lucide-react';
 
+// Image Imports
+import goatIt from '../images/goat_it.png';
+import doomEternal from '../images/doom_eternal.png';
+
 const Projects = () => {
   const projects = [
     {
       title: 'Goat It',
-      description: 'A todo list app made using React, Firebase, Vite',
-      technologies: ['React', 'Firebase'],
-      icon: Cpu,
-      gradient: 'from-purple-500 to-pink-500'
+      description: 'A streamlined task management app built with React and Appwrite. Users can create, edit, and delete tasks effortlessly via a clean UI, showcasing my skills in React, Appwrite backend integration, and modern web design.',
+      imageAddr: goatIt,
+      technologies: ['React', 'Appwrite', 'Vite'],
+      githubLink: 'https://github.com/prakash2077/react-todo-list',
+      projectLink : 'https://goat-it-todo.vercel.app/',
     },
-
-    // {
-    //   title: 'Personal Portfolio Website',
-    //   description: 'A responsive portfolio website showcasing modern web development practices with smooth animations and optimized performance.',
-    //   technologies: ['Next.js', 'React', 'Tailwind CSS', 'TypeScript'],
-    //   icon: Globe,
-    //   gradient: 'from-blue-500 to-cyan-500'
-    // },
-    // {
-    //   title: 'Task Management Dashboard',
-    //   description: 'A comprehensive task management system with real-time updates, drag-and-drop functionality, and collaborative features.',
-    //   technologies: ['React', 'Firebase', 'JavaScript', 'CSS'],
-    //   icon: Smartphone,
-    //   gradient: 'from-green-500 to-emerald-500'
-    // },
-    // {
-    //   title: 'Machine Learning Model Trainer',
-    //   description: 'A Python-based tool for training and evaluating machine learning models with a user-friendly interface for data preprocessing.',
-    //   technologies: ['Python', 'Scikit-learn', 'Pandas', 'NumPy'],
-    //   icon: Cpu,
-    //   gradient: 'from-orange-500 to-red-500'
-    // }
+    {
+      title: 'Doom Eternal Fan Site',
+      description: 'A dynamic fan site dedicated to Doom Eternal, featuring game-inspired design and interactive elements. This project showcases a visually engaging interface that reflects the intense, fast-paced nature of the game, highlighting my ability to create thematic and user-focused web experiences.',
+      imageAddr: doomEternal,
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      githubLink: 'https://github.com/prakash2077/Doom-Eternal-Fun',
+      projectLink : 'https://siva-doometernal.netlify.app/',
+    },
   ];
 
   return (
@@ -54,8 +45,9 @@ const Projects = () => {
               className="group bg-white rounded-2xl border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
             >
               <div className="p-8">
-                <div className={`w-12 h-12 rounded-xl bg-gradient-to-r ${project.gradient} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                  <project.icon className="w-6 h-6 text-white" />
+                
+                <div className="mt-2 mb-2">
+                  <img className='rounded' src={project.imageAddr} alt="" />
                 </div>
                 
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
@@ -80,11 +72,11 @@ const Projects = () => {
                 <div className="flex space-x-4">
                   <button className="flex items-center space-x-2 text-gray-600 hover:text-gray-900 transition-colors duration-200">
                     <Github className="w-4 h-4" />
-                    <span className="text-sm font-medium">Code</span>
+                    <span className="text-sm font-medium"><a href={project.githubLink} target='_blank'>Code</a></span>
                   </button>
                   <button className="flex items-center space-x-2 text-gray-600 hover:text-gray-900 transition-colors duration-200">
                     <ExternalLink className="w-4 h-4" />
-                    <span className="text-sm font-medium"><a href="https://react-todo-list-qviw.vercel.app/" target='_blank'>Live Demo</a></span>
+                    <span className="text-sm font-medium"><a href={project.projectLink} target='_blank'>Live Demo</a></span>
                   </button>
                 </div>
               </div>

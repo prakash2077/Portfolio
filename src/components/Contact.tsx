@@ -42,7 +42,6 @@ const Contact = () => {
                     <p className="text-gray-600 text-sm">rsivasaiprakash121@gmail.com</p>
                   </div>
                 </a>
-                {/* This is a comment */}
                 <a 
                   href="https://www.linkedin.com/in/rayudu-siva-sai-prakash/"
                   target="_blank"
@@ -54,12 +53,12 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium text-gray-900">LinkedIn</p>
-                    <p className="text-gray-600 text-sm">Connect professionally</p>
+                    {/* <p className="text-gray-600 text-sm">Connect professionally</p> */}
                   </div>
                 </a>
                 
                 <a 
-                  href="https://github.com/yourprofile"
+                  href="https://github.com/prakash2077"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-4 p-4 rounded-lg border border-gray-200 hover:border-gray-300 hover:shadow-md transition-all duration-200 group"
@@ -69,7 +68,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium text-gray-900">GitHub</p>
-                    <p className="text-gray-600 text-sm">Check out my code</p>
+                    {/* <p className="text-gray-600 text-sm">Check out my code</p> */}
                   </div>
                 </a>
               </div>
